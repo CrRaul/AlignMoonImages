@@ -60,14 +60,16 @@ def exportCrop():
 	global outImages
 
 	i = 0
+	kernel = np.array([[-1,-1,-1], [-1,9,-1], [-1,-1,-1]])	
 	for img in outImages:
+		img = cv2.filter2D(img, -1, kernel)	
 		cv2.imwrite('output/out'+str(i)+'.png',img)
 		i=i+1
 
-importImages("input")
+importImages()
 print("import")
 findCenterObj()
 print("center")
-cropImages(500,500)
+cropImages(700,700)
 print("crop")
 exportCrop()
