@@ -8,6 +8,7 @@ The most important step: pictures, that’s why I’ve took one every 5 minutes 
 
 An equatorial mount helps to automatically track objects in the sky. So, not having one, in this case, the Moon would be in different positions in each frame. To solve this I wrote this script that cuts the images and at the end, the Moon will be in the center of each frame.
 
+
 I can describe the logic behind it in a few steps:
 
 1. Upload edited( color adjustment – Lightroom) images;
